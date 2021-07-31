@@ -17,6 +17,7 @@ namespace UserRegistrationUsingDataAnnotations
         public string LastName1 { get; set; }
        
         [DataType(DataType.EmailAddress)]
+        [EmailAddress]
         public string EmailId1 { get; set; }
 
 
