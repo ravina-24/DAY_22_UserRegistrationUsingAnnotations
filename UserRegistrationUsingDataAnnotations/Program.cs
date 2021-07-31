@@ -9,9 +9,6 @@ namespace UserRegistrationUsingDataAnnotations
         {
             Console.WriteLine("Welcome to user Registration  ");
             AnnotationTest.Display();
-
-
-
         }
     }
 }
