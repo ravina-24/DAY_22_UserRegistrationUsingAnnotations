@@ -19,8 +19,10 @@ namespace UserRegistrationUsingDataAnnotations
         [DataType(DataType.EmailAddress)]
         public string EmailId1 { get; set; }
         
+
         [DataType(DataType.PhoneNumber)]
         public string PhoneNumber1 { get; set; }
+
     }
 
 }
