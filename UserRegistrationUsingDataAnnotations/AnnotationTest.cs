@@ -13,10 +13,17 @@ namespace UserRegistrationUsingDataAnnotations
         {
             Console.Write("Enter First Name : ");
             string FirstName = Console.ReadLine();
+
+            Console.Write("Enter Last Name  : ");
+            string LastName = Console.ReadLine();
+
+
             Console.WriteLine("User Registartion Validations");
-            Console.WriteLine("===============================");
+
+            Console.WriteLine("<---------------------------------->");
             UserRegistration userRegistration = new UserRegistration();
             userRegistration.FirstName1 = FirstName;
+            userRegistration.LastName1 = LastName;
            
             ValidationContext context = new System.ComponentModel.DataAnnotations.ValidationContext(userRegistration, null, null);
             List<ValidationResult> results = new List<ValidationResult>();
@@ -32,7 +39,8 @@ namespace UserRegistrationUsingDataAnnotations
             }
             else
             {
-                Console.WriteLine("FirstName: " + userRegistration.FirstName1 );
+                Console.WriteLine("FirstName: " + userRegistration.FirstName1 + " "
+                                 + "LastName : " +userRegistration.LastName1 );
             }
             
             Console.ReadKey();
