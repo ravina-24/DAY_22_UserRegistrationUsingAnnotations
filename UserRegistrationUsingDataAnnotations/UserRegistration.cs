@@ -27,7 +27,10 @@ namespace UserRegistrationUsingDataAnnotations
         public string EmailId1 { get; set; }
 
 
-
+        [Required(ErrorMessage = "Phone Number is required. It shouldn't be empty ")]
+        
+        [DataType(DataType.PhoneNumber)]
+        public string PhoneNumber1 { get; set; }
     }
 
 }
