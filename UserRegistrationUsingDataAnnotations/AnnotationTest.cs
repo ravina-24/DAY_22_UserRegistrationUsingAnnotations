@@ -11,7 +11,6 @@ namespace UserRegistrationUsingDataAnnotations
     {
         public static void Display()
         {
-
             Console.Write("Enter First Name : ");
             string FirstName = Console.ReadLine();
             Console.WriteLine("User Registartion Validations");
@@ -21,6 +20,7 @@ namespace UserRegistrationUsingDataAnnotations
            
             ValidationContext context = new System.ComponentModel.DataAnnotations.ValidationContext(userRegistration, null, null);
             List<ValidationResult> results = new List<ValidationResult>();
+
             bool valid = Validator.TryValidateObject(userRegistration, context, results, true);
             if (!valid)
             {
