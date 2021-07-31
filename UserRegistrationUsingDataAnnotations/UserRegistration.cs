@@ -12,7 +12,6 @@ namespace UserRegistrationUsingDataAnnotations
         [RegularExpression("^[A-Z][a-z]{2,}$", ErrorMessage = "Name is invalid ")]
         [DataType(DataType.Text)]
         public string FirstName1 { get; set; }
-
     }
 
 }
