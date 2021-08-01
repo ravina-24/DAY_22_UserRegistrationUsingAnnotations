@@ -43,7 +43,7 @@ namespace UserRegistrationUsingDataAnnotations
             {
                 foreach (ValidationResult TotalResult in results)
                 {
-                    Console.WriteLine("Member Name : {0}", TotalResult.MemberNames.First(), Environment.NewLine);
+                    Console.WriteLine("Item : {0}", TotalResult.MemberNames.First(), Environment.NewLine);
                     Console.WriteLine("Error Msg : {0}", TotalResult.ErrorMessage, Environment.NewLine);
                 }
             }
